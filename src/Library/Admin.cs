@@ -10,4 +10,9 @@ public class Admin:Usuario
     {
         this.nombre=name;
     }
+
+    public void agregarrefugiobasedatos(Refugio refugiov,Refugiosaux refugiosauxv)
+    {
+        refugiosauxv.listaderefugios.Add(refugiov);
+    }
 }

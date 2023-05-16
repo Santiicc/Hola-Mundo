@@ -5,11 +5,11 @@ namespace Proyecto6
 {
     public class Refugiosaux
     {
-        public List<string> listaderefugios{get;set;}=new List<string>();
+        public List<Refugio> listaderefugios=new List<Refugio>();
 
-        public Refugiosaux(Refugio shelterx)
+        public void getinfo(Refugio shelterf)
         {
-            
+            Console.WriteLine($"El nombre del refugio es: {shelterf.nameshelter}, el dueño de este refugio es {shelterf.owner}, este refugio se encuentra en ");
         }
 
 

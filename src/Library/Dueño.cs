@@ -18,4 +18,9 @@ public class Dueño:Usuario
     {
         refugiox.owner=this.nombre;
     }  
+
+    public void Cambiardescripcion(Refugio shelterx4,string descriptionx2)
+    {
+        shelterx4.description=descriptionx2;
+    }
 }

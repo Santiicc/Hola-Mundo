@@ -15,10 +15,11 @@ public class Refugio
     public List<Calificacion> calificaciones = new List<Calificacion>();
 
 
-    public Refugio(string namex,string ubicationx)
+    public Refugio(string namex,string ubicationx,string descriptionx)
     {
         this.ubication=ubicationx;
         this.nameshelter=namex;
+        this.description=descriptionx;
     }
 
      public void agregarcategoria(Refugio refugiox2,Categoria categoriax)

@@ -15,4 +15,9 @@ public class Admin:Usuario
     {
         refugiosauxv.listaderefugios.Add(refugiov);
     }
+
+     public void quitarrefugiobasedatos(Refugio refugiol,Refugiosaux refugiosauxl)
+    {
+        refugiosauxl.listaderefugios.Remove(refugiol);
+    }
 }

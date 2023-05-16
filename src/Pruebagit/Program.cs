@@ -37,8 +37,8 @@ class Program
         juan.agregarrefugiobasedatos(refugio2,refugiosaux1);
         juan.agregarrefugiobasedatos(refugio3,refugiosaux1);
         lucas.Calificate(refugio2,calificacionx3);
-        lucas.Calificate(refugio3,calificacionx4);
+        lucas.Calificate(refugio3,calificacionx);
         lucas.buscarrefugios(refugiosaux1);
-
+        juan.quitarrefugiobasedatos(refugio3,refugiosaux1);
     }
 }

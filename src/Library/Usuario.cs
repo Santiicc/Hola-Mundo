@@ -5,12 +5,15 @@ using System.Linq;
 namespace Proyecto6;
 public class Usuario
 {
+    //Superclase Usuario
     public string name;
 
     public void Calificate(Refugio shelterx4,Calificacion calificationx3)
     {
         shelterx4.calificaciones.Add(calificationx3);
     }
+    //Calificate obtiene un objeto de tipo Refugio y uno de tipo calificacion
+    //Y añade ese objeto de tipo calificacion a la lista de calificaciones del tipo Refugio.
 
     public void buscarrefugios(Refugiosaux shelterxaux4)
     {
@@ -28,5 +31,12 @@ public class Usuario
             Console.WriteLine($"{item3.Key} con una valoracion de {item3.Value}");
         }
     }
+
+    
+    /*
+        
+        *MAS METODOS PARA EL USUARIO PROXIMAMENTE*
+
+    */
 
 }

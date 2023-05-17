@@ -12,8 +12,15 @@ namespace Proyecto6
 
         public void getinfo(Refugio shelterf)
         {
-            Console.WriteLine($"El nombre del refugio es: {shelterf.nameshelter}, el dueño de este refugio es {shelterf.owner}, este refugio se encuentra en ");
+            Console.WriteLine($"El nombre del refugio es: {shelterf.nameshelter}, el dueño de este refugio es {shelterf.owner}, este refugio se encuentra en.... ");
         }
+
+        
+    /*
+        
+        *MAS METODOS PARA REFUGIOSAUX PROXIMAMENTE*
+
+    */
 
 
     }

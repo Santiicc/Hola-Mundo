@@ -3,11 +3,14 @@ namespace Proyecto6;
 
 public class Refugio
 {
+    //Clase de Tipo Refugio que tiene caracterisiticas del mismo y otras funcionalidades 
     public string owner{get;set;}
 
     public string ubication{get;set;}
 
     public string nameshelter{get;set;}
+
+    public int contactnumber{get;set;}
 
     public List<Categoria>categories=new List<Categoria>();
 
@@ -26,6 +29,11 @@ public class Refugio
     {
         refugiox2.categories.Add(categoriax);
     }
+    //El metodo agregar categoria se va encargar de obtener como paramteros dos objetos, un Refugio y una Categoria
+    //Ademas la ejecucion de este metodo agrega ese objeto categoria en la lista categorias del objeto refugio.
 
 
+    /*
+        -MAS METODOS DE REFUGIO PROXIMAMENTE-
+    */
 }

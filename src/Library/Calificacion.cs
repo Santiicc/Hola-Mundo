@@ -1,26 +1,31 @@
-using System;
-namespace Proyecto6;
+ [Fact]
+        public void CrearRefugio_SetsOwnerAndContactNumber()
+        {
+            // Arrange
+            var dueño = new Dueño("Dueño1", 1234567890);
+            var refugio = new Refugio("Refugio1", "Ubicacion1", "Descripción1");
 
-public class Calificacion
-{
-    public double rating;
-    public Calificacion(double ratingx)
-    {
-        this.rating=ratingx;
-    }
+            // Act
+            dueño.crearrefugio(refugio);
 
-    public double calcularpromedio(Refugio shelterx3)
-    {
-        double sum=0.0;
-        double counter=0.0;
-        foreach (var item2 in shelterx3.calificaciones)
-        {   
-            sum=sum+item2.rating;
-            counter=counter+1;
+            // Assert
+            Assert.Equal("Dueño1", refugio.owner);
+            Assert.Equal(1234567890, refugio.contactnumber);
         }
-        return sum/counter;
-    }
 
+        [Fact]
+        public void CambiarDescripcion_SetsNewDescription()
+        {
+            // Arrange
+            var dueño = new Dueño("Dueño1", 1234567890);
+            var refugio = new Refugio("Refugio1", "Ubicacion1", "Descripción1");
+
+            // Act
+            dueño.Cambiardescripcion(refugio, "Nueva descripción");
+
+            // Assert
+            Assert.Equal("Nueva descripción", refugio.description);
+        }
     //Este metodo calcula el promedio de un objeto Refugio estableciendo una variable sum y otra counter
     //las cuales va a dividir posteriormente para obtener el promedio de la lista de calificaciones del refugio
 

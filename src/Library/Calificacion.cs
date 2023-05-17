@@ -20,4 +20,8 @@ public class Calificacion
         }
         return sum/counter;
     }
+
+    //Este metodo calcula el promedio de un objeto Refugio estableciendo una variable sum y otra counter
+    //las cuales va a dividir posteriormente para obtener el promedio de la lista de calificaciones del refugio
+
 }

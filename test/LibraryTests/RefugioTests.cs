@@ -1,4 +1,3 @@
-using Xunit;
 using System.Linq;
 using System.IO;
 using System;
@@ -36,36 +35,56 @@ public class RefugioTests
         
         Assert.Contains(refugio, refugiosaux.listaderefugios);
     }
+
     [Test]
+    public void QuitarRefugioBasedatos_RemovesRefugioFromList()
+    {
+        
+        var admin = new Admin("Admin1");
+        var refugio = new Refugio("Refugio1", "Ubicacion1", "Descripción1");
+        var refugiosaux = new Refugiosaux();
+        refugiosaux.listaderefugios.Add(refugio);
+
+        
+        admin.quitarrefugiobasedatos(refugio, refugiosaux);
+
+        Assert.DoesNotContain(refugio, refugiosaux.listaderefugios);
+    }
     //test de Usuario
+   [Test]
+    public void Calificate_AddsCalificationToRefugio()
+    {
+        var usuario = new Usuario();
+        var refugio = new Refugio("Refugio1", "Ubicacion1", "Descripción1");
+        var calificacion = new Calificacion(4.5);
+
+        usuario.Calificate(refugio, calificacion);
+
+        Assert.Contains(calificacion, refugio.calificaciones);
+    }
+
+    [Test]
     public void BuscarRefugios_DisplayAvailableRefugios()
     {
         
         var usuario = new Usuario();
-        var shelterxaux4 = new Refugiosaux(); 
+        var shelterxaux = new Refugiosaux();
 
         var refugio1 = new Refugio("Refugio1", "Ubicacion1", "Descripción1");
-        var calificacion1 = new Calificacion(); 
-        calificacion1.AddRating(4); 
+        var calificacion1 = new Calificacion(4.2);
         refugio1.calificaciones.Add(calificacion1);
-        shelterxaux4.listaderefugios.Add(refugio1);
+        shelterxaux.listaderefugios.Add(refugio1);
 
         var refugio2 = new Refugio("Refugio2", "Ubicacion2", "Descripción2");
-        var calificacion2 = new Calificacion(); 
-        calificacion2.AddRating(3);
+        var calificacion2 = new Calificacion(3.8);
         refugio2.calificaciones.Add(calificacion2);
-        shelterxaux4.listaderefugios.Add(refugio2);
-
-        var expectedOutput = $"Los refugios disponibles en la plataforma son: {Refugio1} con una valoracion de {Refugio2} con una valoracion de 3";
-
-        using (StringWriter sw = new StringWriter())
+        shelterxaux.listaderefugios.Add(refugio2);
+       
+        using (var consoleOutput = new ConsoleOutput())
         {
-            Console.SetOut(sw);
-            usuario.buscarrefugios(shelterxaux4);
-            string consoleOutput = sw.ToString().Trim();
+            usuario.buscarrefugios(shelterxaux);
 
-            
-            Assert.Equal(expectedOutput, consoleOutput);
+            Assert.AreEqual(expectedOutput, consoleOutput.GetOutput());
         }
     }
 

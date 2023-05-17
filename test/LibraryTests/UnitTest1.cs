@@ -31,7 +31,7 @@ namespace Proyecto6.Tests
           
             Assert.Contains(refugio, refugiosaux.listaderefugios);
         }
-        
+       
         
 
     }

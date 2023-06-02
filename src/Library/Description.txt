@@ -1,0 +1,63 @@
+----------------------------------------------------------------------------------------------
+                                CHATBOT DE REFUGIOS
+----------------------------------------------------------------------------------------------
+
+#La logica principal de el programa es el crear un programa(CHATBOT), que este conectado con la plataforma de 
+Telegram y que cumpla con las siguientes historias de usuario:
+
+--------------------------------------------------------------------------------------------------------------
+Cómo administrador, quiero poder indicar categorías de los refugios (transitorios y permanentes, 
+para personas, animales o ambos) para que de esa forma, los responsables de un refugio puedan clasificarlos.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como administrador, quiero poder dar de baja refugios, avisando al responsable para que de esa forma, 
+pueda evitar ofertas de refugio inadecudas.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como responsable de un refugio, quiero registrarme en la plataforma, 
+indicando mis datos personales e información de contacto para que de esa forma, 
+pueda proveer información de contacto a quienes quieran acceder al refugio.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como responsable de un refugio, quiero poder publicar un refugio y los servicios que el mismo ofrece;
+mi oferta indicará en qué categorías quiero publicar, tendrá una descripción del refugio publicado, 
+para que de esa forma pueda ser visto por los usuarios que buscan un refugio.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como usuario que busca un refugio, quiero registrarme en la plataforma, 
+indicando mis datos personales e información de contacto para que de esa forma, 
+pueda proveer información de contacto a los refugios que reciben animales y/o personas.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como usuario que busca un refugio, quiero buscar refugios, 
+opcionalmente filtrando por categorías para que de esa forma, 
+pueda seleccionar un refugio adecuado a las necesidades.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como usuario que busca un refugio, quiero ver el resultado de las búsquedas de refugios 
+ordenado en forma ascendente de distancia a mi ubicación, es decir, las más cercanas primero 
+para que de esa forma, pueda ponerme en contacto con el refugio más cercano.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como usuario que busca un refugio, quiero ver el resultado de las búsquedas de refugios 
+ordenado en forma descendente por reputación, es decir, las de mejor reputación primero 
+para que de esa forma, pueda ponerme en contacto con el refugio con mejor reputación.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como usuario que busca un refugio, quiero poder contactar a un refugio para que de esa forma, 
+pueda enviar un animal o referir una persona.
+--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Como usuario que busca un refugio, quiero poder calificar a un refugio; 
+si no es calificado en un mes, la calificación será neutral, para que de esa forma, 
+pueda definir la reputaión del refugio.
+--------------------------------------------------------------------------------------------------------------

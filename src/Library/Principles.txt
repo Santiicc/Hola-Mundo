@@ -1,0 +1,61 @@
+-----------------------------------------------------------------
+                    Principios SOLID
+-----------------------------------------------------------------
+
+Para este proyecto se aplicaran Principios y patrones de la POO(Programación Orientada a Objetos), con el 
+objetivo de poder obtener tanto flexibilidad y eficiencia a futuro, para así poder mejorar 
+o realizar cambios en el codigo, y no arrastrar dependencias innecesarias en las clases del programa. 
+
+----------------------------------------------------------------------------------------------
+*Principio De Responsabilidad unica*
+
+-// Una clase debe tener una unica Responsabilidad, esto significa que una clase debe encargarse de una 
+    sola cosa, no que tenga un solo metodo, sino que su Responsabilidad sea una sola respecto a esa clase.
+-------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------
+*Principio de abierto/cerrado*
+
+-// Este Principio establece que el codigo debe estar abierto a la extension y cerrado a la modificacion,
+    osea que para cambiar algo en el proyecto, se deberian crear nuevas clases para modificar el comportamiento
+    del programa, y no tener que modificar el codigo de las clases ya hechas.
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------
+*Principio de segregación de Interfaces*                                                               
+                                                                                                       
+-// Es mejor tener varias Interfaces mas pequeñas y especializadas, que una unica interfaz grande       
+    con todos los metodos y que obligue a otras clases a depender aunque no las utilicen.              
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+*Lsp(Principio de sustitucion de Liskov)*
+
+-// El Principio de Liskov nos dice que todos los objetos de una superclase deben ser reemplazables por objetos de
+    sus subclases sin alterar el funcionamiento del programa.    
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+*Dip(Principio de inversion de dependencias)*
+
+-// Este Principio tiene como objetivo el reducir las dependencias entre clases, para ello establece
+    que es mejor depender de las abstracciones de Interfaces en lugar de depender de clases en concreto.
+-------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+*Polimorfismo*
+
+-// El Polimorfismo facilita la reutilizacion de codigo, ya que permite que objetos de distintas clases
+    con las mismas bases puedan tener distintas implementaciones de un mismo metodo.
+    Ejemplo:
+    Tengo la interfaz Animal con el metodo emitirsonido(), y tengo las clases Gallina y Vaca, estas dos clases
+    van a implementar el metodo emitirsonido(), pero de distintas formas.
+--------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+*Herencia*
+
+-// La herencia es la capacidad en POO de que objetos de una subclase, hereden o tengan los mismos metodos
+    y comportamientos que la superclase o la clase que hereda
+----------------------------------------------------------------------------------------------------------
